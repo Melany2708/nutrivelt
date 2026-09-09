@@ -14,7 +14,6 @@ window.NUTRIVELT_CONFIG = {
     institution: 'Colegio Privado Preuniversitario "Roosevelt"',
     institutionShort: 'Roosevelt',
     student: 'Jhonatan Bringas Vasquez',
-    advisor: 'Jhonatan Bringas Vasquez',
     institutionCode: '1722214',
     modularCode: 'POR COMPLETAR',
     category: 'CATEGORÍA B'
@@ -43,29 +42,28 @@ window.NUTRIVELT_CONFIG = {
     hero: { src: 'assets/images/Foto principal del Producto_.jpg'},
     problem: { src: 'assets/images/Imagen del problema_.jpg'},
     problemEvidence: { src: 'assets/images/Imagen del problema.jpg'},
-    innovation: { src: '', alt: 'Innovación de NUTRIVELT', label: 'ESPACIO PARA FOTOGRAFÍA O VIDEO' },
-    empathyMap: { src: '', alt: 'Mapa de empatía del proyecto', label: 'ESPACIO PARA MAPA DE EMPATÍA' },
-    cover: { src: '', alt: 'Foto representativa del proyecto', label: 'ESPACIO PARA FOTO REPRESENTATIVA' },
-    advisor: { src: '', alt: 'Foto del docente asesor', label: 'ESPACIO PARA FOTO' }
+    innovation: { src: 'assets/images/Foto del procuto final_.jpg'},
+    empathyMap: { src: 'assets/images/mapaempatia.png'},
+    cover: { src: 'assets/images/Foto del procuto final_.jpg' },
   },
 
   solutionSteps: [
-    { title: 'Ingredientes', text: 'Selección de insumos para la preparación.', media: { src: '', label: 'FOTO DE INGREDIENTES' } },
-    { title: 'Preparación', text: 'Mezcla y trabajo de la receta.', media: { src: '', label: 'FOTO DE PREPARACIÓN' } },
-    { title: 'Horneado', text: 'Etapa de cocción del producto.', media: { src: '', label: 'FOTO DE HORNEADO' } },
-    { title: 'Producto final', text: 'Presentación lista para compartir.', media: { src: '', label: 'FOTO DEL PRODUCTO FINAL' } }
+    { title: 'Ingredientes', text: 'Selección de insumos para la preparación.', media: { src: 'assets/images/Foto de los ingredientes_.jpg} },
+    { title: 'Preparación', text: 'Mezcla y trabajo de la receta.', media: { src: 'assets/images/Preparación.jpg', label: 'FOTO DE PREPARACIÓN' } },
+    { title: 'Horneado', text: 'Etapa de cocción del producto.', media: { src: 'assets/images/Horneado_.jpg', label: 'FOTO DE HORNEADO' } },
+    { title: 'Producto final', text: 'Presentación lista para compartir.', media: { src: 'assets/images/Foto del procuto final_.jpg', label: 'FOTO DEL PRODUCTO FINAL' } }
   ],
 
   ingredients: [
-    { name: 'Camote', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE CAMOTE' } },
-    { name: 'Zapallo', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE ZAPALLO' } },
-    { name: 'Anís', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE ANÍS' } },
-    { name: 'Harina de garbanzo', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE HARINA DE GARBANZO' } },
-    { name: 'Harina común', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE HARINA COMÚN' } },
-    { name: 'Huevo', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE HUEVO' } },
-    { name: 'Panela', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE PANELA' } },
-    { name: 'Canela', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE CANELA' } },
-    { name: 'Clavo de olor', description: 'Ingrediente seleccionado para la receta.', note: 'Descripción y aporte por completar.', media: { src: '', label: 'FOTO DE CLAVO DE OLOR' } }
+    { name: 'Camote', description: 'Ingrediente seleccionado para la receta.', note: 'El camote aporta principalmente valor nutricional, sabor y textura, además de permitir transformar un alimento de origen natural en una alternativa de snack más saludable y atractiva para los estudiantes.', media: { src: 'assets/images/camote.jpg' } },
+    { name: 'Zapallo', description: 'Ingrediente seleccionado para la receta.', note: 'El zapallo contribuye al valor nutricional, textura y sabor de la galleta, permitiendo aprovechar un alimento natural que no siempre es consumido de manera habitual y transformarlo en un snack más atractivo para los estudiantes.', media: { src: 'assets/images/zapallojpg.jpg'} },
+    { name: 'Anís', description: 'Ingrediente seleccionado para la receta.', note: 'El anís aporta principalmente sabor y aroma, ayudando a mejorar las características sensoriales de la galleta y haciendo que el producto resulte más agradable al consumidor. Además, complementa los ingredientes naturales utilizados en la elaboración de NUTRIVELT.', media: { src: 'assets/images/anis.jpg'} },
+    { name: 'Harina de garbanzo', description: 'Ingrediente seleccionado para la receta.', note: 'La harina de garbanzo aporta principalmente proteínas vegetales, fibra y nutrientes, fortaleciendo el valor nutricional de la galleta y contribuyendo al objetivo de ofrecer un snack más saludable para los estudiantes.', media: { src: 'assets/images/HARINA DE GARBANZO.jpg'} },
+    { name: 'Harina común', description: 'Ingrediente seleccionado para la receta.', note: 'La harina aporta principalmente estructura, consistencia y textura a la galleta, permitiendo integrar adecuadamente los demás ingredientes y obtener el producto final. También contribuye al aporte energético mediante sus carbohidratos.', media: { src: 'assets/images/harina.jpg'} },
+    { name: 'Huevo', description: 'Ingrediente seleccionado para la receta.', note: 'El huevo aporta principalmente proteínas y nutrientes, además de contribuir a la estructura, textura y unión de los ingredientes durante la elaboración de la galleta.', media: { src: 'assets/images/huevo.jpg' } },
+    { name: 'Panela', description: 'Ingrediente seleccionado para la receta.', note: 'La panela aporta principalmente dulzor y energía, mejorando el sabor de la galleta y contribuyendo a que sea más agradable para los estudiantes. Su uso permite endulzar el producto mediante una alternativa menos refinada que el azúcar convencional.', media: { src: 'assets/images/panela.jpg'} },
+    { name: 'Canela', description: 'Ingrediente seleccionado para la receta.', note: 'La canela aporta principalmente aroma, sabor y características sensoriales, complementando los demás ingredientes y haciendo que la galleta tenga un sabor más agradable y atractivo para los consumidores.', media: { src: 'assets/images/canela.jpg' } },
+    { name: 'Clavo de olor', description: 'Ingrediente seleccionado para la receta.', note: 'El clavo de olor es una especia aromática obtenida de los botones florales secos del árbol Syzygium aromaticum. Se caracteriza por su aroma intenso, sabor ligeramente picante y propiedades antioxidantes.', media: { src: 'assets/images/clavo.jpg' } }
   ],
 
   competition: [
