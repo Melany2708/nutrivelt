@@ -48,10 +48,10 @@ window.NUTRIVELT_CONFIG = {
   },
 
   solutionSteps: [
-    { title: 'Ingredientes', text: 'Selección de insumos para la preparación.', media: { src: 'assets/images/Foto de los ingredientes_.jpg} },
-    { title: 'Preparación', text: 'Mezcla y trabajo de la receta.', media: { src: 'assets/images/Preparación.jpg', label: 'FOTO DE PREPARACIÓN' } },
-    { title: 'Horneado', text: 'Etapa de cocción del producto.', media: { src: 'assets/images/Horneado_.jpg', label: 'FOTO DE HORNEADO' } },
-    { title: 'Producto final', text: 'Presentación lista para compartir.', media: { src: 'assets/images/Foto del procuto final_.jpg', label: 'FOTO DEL PRODUCTO FINAL' } }
+    { title: 'Ingredientes', text: 'Selección de insumos para la preparación.', media: { src: 'assets/images/Foto de los ingredientes_.jpg1'} },
+    { title: 'Preparación', text: 'Mezcla y trabajo de la receta.', media: { src: 'assets/images/Preparación.jpg' } },
+    { title: 'Horneado', text: 'Etapa de cocción del producto.', media: { src: 'assets/images/Horneado_.jpg'} },
+    { title: 'Producto final', text: 'Presentación lista para compartir.', media: { src: 'assets/images/Foto del procuto final_.jpg'} }
   ],
 
   ingredients: [
