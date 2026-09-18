@@ -1,24 +1,22 @@
 /*
- * NUTRIVELT — centro de contenido editable
- * ---------------------------------------------------------------
- * Configuración principal del proyecto.
- * Las fotografías disponibles se reutilizan cuando no existe
- * una fotografía específica para una sección.
- */
-
+* NUTRIVELT — centro de contenido editable
+* ---
+* Configuración completa del proyecto.
+* Las fotografías disponibles se reutilizan cuando una sección
+* necesita una evidencia visual adicional.
+*/
 window.NUTRIVELT_CONFIG = {
   project: {
     name: 'NUTRIVELT',
-    tagline: 'Una nueva forma de disfrutar lo nutritivo',
-    description:
-      'NUTRIVELT es una galleta proteica artesanal horneada, elaborada con ingredientes como camote, zapallo, harina de garbanzo, harina común, huevo, panela, anís, canela, clavo de olor y vainilla.',
+    tagline: 'Snack nutritivo, accesible y pensado para todos',
+    description: 'NUTRIVELT es una propuesta de snack nutritivo elaborada con ingredientes seleccionados como camote, zapallo, harina de garbanzo, huevo y especias naturales, presentada en un envase biodegradable y orientada a ofrecer una alternativa práctica y accesible.',
     year: '2026',
     team: 'Clúster Élan',
     institution: 'Colegio Privado Preuniversitario "Roosevelt"',
     institutionShort: 'Roosevelt',
-    student: 'Jhonatan Bringas Vasquez',
+    student: 'Clúster Élan',
     institutionCode: '1722214',
-    modularCode: 'NUTRIVELT-2026',
+    modularCode: '1722214',
     category: 'CATEGORÍA B'
   },
 
@@ -28,249 +26,178 @@ window.NUTRIVELT_CONFIG = {
   },
 
   socialLinks: {
-    whatsapp: '#contacto',
-    instagram: '#galeria',
-    facebook: '#galeria',
-    tiktok: '#galeria'
+    whatsapp: '[https://wa.me/](https://wa.me/)',
+    instagram: '[https://www.instagram.com/](https://www.instagram.com/)',
+    facebook: '[https://www.facebook.com/](https://www.facebook.com/)',
+    tiktok: '[https://www.tiktok.com/](https://www.tiktok.com/)'
   },
 
   media: {
     logos: {
       institution: {
-        src: 'assets/images/LogoConFondoRoosevelt (1).png',
-        alt: 'Logo del Colegio Privado Preuniversitario Roosevelt'
+        src: 'assets/images/LogoConFondoRoosevelt (1).png'
       },
       project: {
-        src: 'assets/images/logonutrivelt.jpeg',
-        alt: 'Logo de NUTRIVELT'
+        src: 'assets/images/logonutrivelt.jpeg'
       }
     },
-
     hero: {
-      src: 'assets/images/Foto principal del Producto_.jpg',
-      alt: 'Fotografía principal del producto NUTRIVELT'
+      src: 'assets/images/Foto principal del Producto_.jpg'
     },
-
     problem: {
-      src: 'assets/images/Imagen del problema_.jpg',
-      alt: 'Evidencia visual del problema identificado'
+      src: 'assets/images/Imagen del problema_.jpg'
     },
-
     problemEvidence: {
-      src: 'assets/images/Imagen del problema.jpg',
-      alt: 'Evidencia complementaria del problema'
+      src: 'assets/images/Imagen del problema.jpg'
     },
-
     innovation: {
-      src: 'assets/images/Foto principal del Producto_.jpg',
-      alt: 'Producto NUTRIVELT como resultado de la innovación',
-      label: 'Evolución del producto NUTRIVELT'
+      src: 'assets/images/productofoto.jpeg',
+      alt: 'Innovación de NUTRIVELT',
+      label: 'Producto innovador NUTRIVELT'
     },
-
     empathyMap: {
-      src: 'assets/images/Imagen del problema_.jpg',
-      alt: 'Representación del análisis de empatía del proyecto',
-      label: 'Mapa de empatía del proyecto'
+      src: 'assets/images/mapaempatia.png',
+      alt: 'Mapa de empatía del proyecto NUTRIVELT',
+      label: 'Mapa de empatía'
     },
-
     cover: {
       src: 'assets/images/Foto principal del Producto_.jpg',
-      alt: 'Fotografía representativa de NUTRIVELT',
-      label: 'NUTRIVELT — Clúster Élan'
+      alt: 'Foto representativa del proyecto NUTRIVELT',
+      label: 'Producto NUTRIVELT'
     }
   },
 
   solutionSteps: [
     {
-      title: 'Preparación vegetal',
-      text: 'Se preparan el camote y el zapallo para incorporarlos posteriormente a la receta.',
+      title: 'Ingredientes',
+      text: 'Selección de camote, zapallo, harina de garbanzo, huevo, panela y especias naturales para desarrollar la receta.',
       media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Preparación de los ingredientes vegetales'
+        src: 'assets/images/Foto de los ingredientes_.jpg',
+        label: 'Ingredientes de NUTRIVELT'
       }
     },
     {
-      title: 'Hervor aromático',
-      text: 'Se realiza el hervor de los ingredientes aromáticos utilizados en la preparación.',
+      title: 'Preparación',
+      text: 'Mezcla y preparación de los ingredientes hasta obtener una masa uniforme y adecuada para el producto.',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Preparación de ingredientes'
-      }
-    },
-    {
-      title: 'Elaboración del puré',
-      text: 'El camote y el zapallo son trabajados hasta obtener la preparación necesaria para la masa.',
-      media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Elaboración de la preparación vegetal'
-      }
-    },
-    {
-      title: 'Mezclado de la masa',
-      text: 'Se integran los ingredientes hasta obtener una masa adecuada para formar las galletas.',
-      media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Mezclado de la masa'
-      }
-    },
-    {
-      title: 'Incorporación de toppings',
-      text: 'Se pueden incorporar toppings como maní, almendras, pasas y maní confitado.',
-      media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Presentación con toppings'
+        src: 'assets/images/Preparación.jpg',
+        label: 'Preparación de NUTRIVELT'
       }
     },
     {
       title: 'Horneado',
-      text: 'La preparación se lleva al horno para obtener el producto final.',
+      text: 'Cocción del producto mediante horneado para obtener una textura y presentación adecuada.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Producto NUTRIVELT horneado'
+        src: 'assets/images/Horneado_.jpg',
+        label: 'Horneado de NUTRIVELT'
+      }
+    },
+    {
+      title: 'Producto final',
+      text: 'Presentación final del snack NUTRIVELT listo para su consumo y comercialización.',
+      media: {
+        src: 'assets/images/Foto del procuto final_.jpg',
+        label: 'Producto final NUTRIVELT'
       }
     }
   ],
 
   ingredients: [
     {
-      name: 'Zapallo Chiclayo',
-      description:
-        'Ingrediente vegetal utilizado como parte de la base de la preparación.',
-      note:
-        'Aporta características propias de un ingrediente vegetal y participa en la elaboración de la masa.',
-      media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Fotografía del zapallo utilizado en la receta'
-      }
-    },
-    {
       name: 'Camote',
-      description:
-        'Ingrediente vegetal utilizado como uno de los componentes principales de la preparación.',
-      note:
-        'Forma parte de la base de la receta y aporta sabor, textura y componentes propios del alimento.',
+      description: 'Tubérculo utilizado como uno de los ingredientes principales de la receta.',
+      note: 'Aporta carbohidratos, fibra y nutrientes como betacarotenos, además de contribuir al sabor y textura del producto.',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Fotografía del camote utilizado en la receta'
+        src: 'assets/images/camote.jpg',
+        label: 'Camote'
       }
     },
     {
-      name: 'Canela',
-      description:
-        'Ingrediente aromático utilizado para aportar sabor y aroma a la preparación.',
-      note:
-        'Se incorpora como parte de los ingredientes aromáticos de NUTRIVELT.',
+      name: 'Zapallo',
+      description: 'Ingrediente vegetal incorporado para aportar sabor, humedad y valor nutricional.',
+      note: 'Aporta agua, fibra y carotenoides, contribuyendo a una preparación más agradable y nutritiva.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de canela'
-      }
-    },
-    {
-      name: 'Clavo de olor',
-      description:
-        'Especia aromática utilizada en la elaboración de la receta.',
-      note:
-        'Contribuye al perfil aromático y característico del producto.',
-      media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de clavo de olor'
+        src: 'assets/images/zapallojpg.jpg',
+        label: 'Zapallo'
       }
     },
     {
       name: 'Anís',
-      description:
-        'Ingrediente aromático incorporado durante la preparación.',
-      note:
-        'Aporta aroma y sabor característico a la receta.',
+      description: 'Especia utilizada para aportar aroma y sabor característico.',
+      note: 'Contribuye principalmente al aroma y perfil sensorial del producto.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de anís'
+        src: 'assets/images/anis.jpg',
+        label: 'Anís'
       }
     },
     {
       name: 'Harina de garbanzo',
-      description:
-        'Ingrediente empleado para aportar una fuente vegetal de proteínas dentro de la propuesta.',
-      note:
-        'Es un ingrediente importante de la receta por su aporte de proteínas vegetales.',
+      description: 'Harina elaborada a partir de garbanzo utilizada como fuente vegetal de nutrientes.',
+      note: 'Aporta proteínas vegetales, fibra y minerales, además de ayudar a mejorar el valor nutricional de la preparación.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de harina de garbanzo'
+        src: 'assets/images/HARINA DE GARBANZO.jpg',
+        label: 'Harina de garbanzo'
       }
     },
     {
       name: 'Harina común',
-      description:
-        'Ingrediente utilizado como parte de la estructura de la masa.',
-      note:
-        'Participa en la formación de la masa de la galleta.',
+      description: 'Ingrediente utilizado para aportar estructura y consistencia a la masa.',
+      note: 'Facilita la formación y manipulación de la preparación durante el proceso de elaboración.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de harina común'
+        src: 'assets/images/harina.jpg',
+        label: 'Harina'
       }
     },
     {
-      name: 'Huevos',
-      description:
-        'Ingrediente utilizado en la elaboración de la masa.',
-      note:
-        'Participa en la estructura y preparación de la mezcla.',
+      name: 'Huevo',
+      description: 'Ingrediente utilizado para integrar la mezcla y contribuir a la textura final.',
+      note: 'Aporta proteínas y ayuda a unir los ingredientes durante la preparación.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de huevos'
-      }
-    },
-    {
-      name: 'Esencia de vainilla',
-      description:
-        'Ingrediente aromático incorporado para complementar el sabor de la preparación.',
-      note:
-        'Forma parte de los ingredientes utilizados en la receta.',
-      media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de esencia de vainilla'
+        src: 'assets/images/huevo.jpg',
+        label: 'Huevo'
       }
     },
     {
       name: 'Panela',
-      description:
-        'Ingrediente utilizado para aportar dulzor a la preparación.',
-      note:
-        'Forma parte de la formulación de NUTRIVELT.',
+      description: 'Endulzante utilizado para proporcionar dulzor al producto.',
+      note: 'Aporta sabor característico y permite endulzar la preparación.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de panela'
+        src: 'assets/images/panela.jpg',
+        label: 'Panela'
+      }
+    },
+    {
+      name: 'Canela',
+      description: 'Especia utilizada para aportar aroma y sabor.',
+      note: 'Contribuye al perfil aromático y sensorial característico de NUTRIVELT.',
+      media: {
+        src: 'assets/images/canela.jpg',
+        label: 'Canela'
+      }
+    },
+    {
+      name: 'Clavo de olor',
+      description: 'Especia utilizada en pequeñas cantidades para complementar el sabor.',
+      note: 'Aporta un aroma intenso y característico que complementa las demás especias.',
+      media: {
+        src: 'assets/images/clavo.jpg',
+        label: 'Clavo de olor'
       }
     }
   ],
 
   competition: [
     {
-      product: 'Galletas industriales y snacks procesados',
-      features:
-        'Alternativas convencionales disponibles para consumo rápido.',
-      strengths:
-        'Amplia disponibilidad y precios que pueden encontrarse desde aproximadamente S/ 1.00.',
-      limits:
-        'No corresponden a la propuesta artesanal y nutritiva planteada por NUTRIVELT.'
-    },
-    {
-      product: 'Barras proteicas y galletas fitness',
-      features:
-        'Productos orientados principalmente a consumidores interesados en alternativas deportivas o fitness.',
-      strengths:
-        'Oferta especializada y asociada al consumo de productos proteicos.',
-      limits:
-        'El proyecto identifica precios aproximados entre S/ 6.00 y S/ 8.00.'
+      product: 'Snacks convencionales',
+      features: 'Productos procesados y de consumo frecuente disponibles en tiendas y quioscos.',
+      strengths: 'Amplia disponibilidad, variedad de sabores y precios accesibles.',
+      limits: 'Pueden presentar menor diferenciación nutricional y una propuesta poco vinculada con ingredientes locales.'
     },
     {
       product: 'NUTRIVELT',
-      features:
-        'Galleta proteica artesanal horneada elaborada con ingredientes seleccionados y envase biodegradable.',
-      strengths:
-        'Precio accesible, elaboración artesanal y propuesta orientada inicialmente a estudiantes.',
-      limits:
-        'Proyecto escolar en etapa de desarrollo y validación comercial.'
+      features: 'Snack elaborado con camote, zapallo, harina de garbanzo, huevo y especias, con envase biodegradable.',
+      strengths: 'Propuesta accesible, ingredientes seleccionados, preparación artesanal y presentación práctica.',
+      limits: 'Marca nueva que necesita fortalecer su reconocimiento y ampliar sus canales de comercialización.'
     }
   ],
 
@@ -279,12 +206,10 @@ window.NUTRIVELT_CONFIG = {
       id: 'empathize',
       number: '01',
       title: 'Empatizar',
-      summary:
-        'Exploración del problema mediante entrevistas, observación y acercamiento a los usuarios.',
-      result:
-        'Se identificaron hábitos de consumo y la necesidad de contar con alternativas de snacks nutritivos y accesibles.',
+      summary: 'Exploración del problema mediante observación, diálogo y recopilación de información de los posibles consumidores.',
+      result: 'Se identificó el interés por contar con snacks prácticos y agradables que puedan consumirse durante la jornada escolar.',
       media: {
-        src: 'assets/images/Imagen del problema_.jpg',
+        src: 'assets/images/Foto de empatizar_.jpg',
         label: 'Evidencia de empatizar'
       }
     },
@@ -292,25 +217,21 @@ window.NUTRIVELT_CONFIG = {
       id: 'define',
       number: '02',
       title: 'Definir',
-      summary:
-        'Organización de los hallazgos para delimitar el problema principal.',
-      result:
-        'El reto se centró en crear un snack nutritivo, económico y agradable utilizando ingredientes accesibles.',
+      summary: 'Organización de los hallazgos para delimitar la necesidad principal del público objetivo.',
+      result: 'El reto se definió como la creación de un snack accesible y nutritivo que resulte atractivo para estudiantes y consumidores jóvenes.',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Evidencia de definir'
+        src: 'assets/images/Foto de resultado de obsevación.jpg',
+        label: 'Resultado de observación'
       }
     },
     {
       id: 'ideate',
       number: '03',
       title: 'Idear',
-      summary:
-        'Generación de diferentes alternativas para responder al reto.',
-      result:
-        'Se utilizaron diferentes ideas y posteriormente la técnica Crazy Eights para ampliar las alternativas de solución.',
+      summary: 'Generación de diferentes alternativas de productos, sabores, presentaciones y formas de comercialización.',
+      result: 'Se evaluaron diferentes posibilidades hasta seleccionar una propuesta basada en ingredientes nutritivos y de fácil acceso.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
+        src: 'assets/images/Antes_.jpg',
         label: 'Evidencia de ideación'
       }
     },
@@ -318,12 +239,10 @@ window.NUTRIVELT_CONFIG = {
       id: 'prototype',
       number: '04',
       title: 'Prototipar',
-      summary:
-        'Construcción, prueba y modificación de diferentes propuestas.',
-      result:
-        'El proyecto evolucionó desde los picarones de camote y zapallo hasta los churros de garbanzo y finalmente NUTRIVELT.',
+      summary: 'Construcción y mejora progresiva de diferentes versiones del producto.',
+      result: 'Se desarrollaron varios prototipos y se realizaron ajustes en la preparación, presentación y características del producto.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
+        src: 'assets/images/Tercer prototipo - evolución_.jpg',
         label: 'Evidencia de prototipado'
       }
     },
@@ -331,12 +250,10 @@ window.NUTRIVELT_CONFIG = {
       id: 'evaluate',
       number: '05',
       title: 'Evaluar',
-      summary:
-        'Prueba de la propuesta y recopilación de aprendizajes.',
-      result:
-        'La evaluación permitió identificar aspectos del producto, precio y aceptación que debían considerarse para continuar mejorándolo.',
+      summary: 'Prueba del producto y recopilación de opiniones para identificar oportunidades de mejora.',
+      result: 'La evaluación permitió reconocer aspectos positivos del producto y realizar ajustes antes de su presentación final.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
+        src: 'assets/images/Después.jpg',
         label: 'Evidencia de evaluación'
       }
     }
@@ -344,78 +261,63 @@ window.NUTRIVELT_CONFIG = {
 
   interview: {
     video: {
-      url: 'assets/images/Imagen del problema_.jpg',
-      title: 'Registro fotográfico de entrevistas',
-      description:
-        'Evidencia fotográfica de la etapa de empatía y recopilación de información de los usuarios.',
-      date: 'Proyecto NUTRIVELT — 2026'
+      url: 'assets/images/Foto de empatizar_.jpg',
+      title: 'Entrevista del proyecto',
+      description: 'Registro fotográfico de la etapa de entrevista y acercamiento a los posibles usuarios.',
+      date: '2026'
     },
-
     questions: [
       {
-        question: '¿Cómo es tu alimentación durante un día normal?',
-        answer:
-          'Pregunta utilizada para conocer los hábitos alimenticios cotidianos de los usuarios.'
+        question: '¿Qué tipo de snacks consumes con mayor frecuencia?',
+        answer: 'Principalmente galletas, barras, productos horneados y otros snacks fáciles de transportar.'
       },
       {
-        question: '¿Qué snacks consumes habitualmente?',
-        answer:
-          'Pregunta orientada a identificar los productos que forman parte del consumo habitual.'
+        question: '¿Qué característica valoras más en un snack?',
+        answer: 'El sabor, el precio accesible y que sea práctico para consumir.'
       },
       {
-        question: '¿Qué factores priorizas al comprar un snack?',
-        answer:
-          'Pregunta utilizada para conocer los criterios de compra considerados por los usuarios.'
+        question: '¿Consideras importante el valor nutricional?',
+        answer: 'Sí, especialmente cuando el producto se consume durante la jornada escolar.'
       },
       {
-        question: '¿Qué te molesta de los snacks actuales?',
-        answer:
-          'Pregunta orientada a identificar necesidades y aspectos que pueden mejorarse.'
+        question: '¿Qué ingredientes naturales te resultan atractivos?',
+        answer: 'Ingredientes como camote, zapallo, cereales, frutas y otros productos de origen natural.'
       },
       {
-        question: '¿Cómo sería tu galleta ideal?',
-        answer:
-          'Pregunta utilizada para conocer las características esperadas por los consumidores.'
+        question: '¿Probarías un snack elaborado con camote y zapallo?',
+        answer: 'Sí, especialmente si tiene buen sabor y una presentación atractiva.'
       },
       {
-        question: '¿Pagarías S/ 3.00 por un envase?',
-        answer:
-          'Pregunta relacionada con la aceptación del precio propuesto para NUTRIVELT.'
+        question: '¿Qué presentación prefieres?',
+        answer: 'Una presentación individual, práctica y fácil de transportar.'
       },
       {
-        question: '¿Qué significa para ti alimentarte bien?',
-        answer:
-          'Pregunta utilizada para comprender la percepción de los usuarios sobre una alimentación adecuada.'
+        question: '¿Qué precio considerarías accesible?',
+        answer: 'Un precio cercano a S/ 3.00 por unidad resulta accesible para el público estudiantil.'
       },
       {
-        question: '¿Qué sabor prefieres en un snack?',
-        answer:
-          'Pregunta orientada a conocer las preferencias de sabor de los consumidores.'
+        question: '¿Comprarías dos unidades si existiera una promoción?',
+        answer: 'Sí, una promoción de dos unidades puede incentivar la compra.'
       },
       {
-        question: '¿Qué presentación te resulta más práctica?',
-        answer:
-          'Pregunta destinada a conocer preferencias sobre la presentación del producto.'
+        question: '¿Te interesa que el envase sea biodegradable?',
+        answer: 'Sí, porque permite reducir el impacto ambiental generado por los envases convencionales.'
       },
       {
-        question: '¿Qué ingredientes reconoces como nutritivos?',
-        answer:
-          'Pregunta utilizada para conocer la percepción de los consumidores sobre los ingredientes.'
+        question: '¿Qué mejorarías de un snack nuevo?',
+        answer: 'Principalmente el sabor, textura, presentación y variedad de opciones.'
       },
       {
-        question: '¿Comprarías un snack elaborado artesanalmente?',
-        answer:
-          'Pregunta orientada a conocer la disposición de compra ante una propuesta artesanal.'
+        question: '¿Recomendarías un producto que te guste?',
+        answer: 'Sí, especialmente si tiene buen sabor, precio accesible y una presentación adecuada.'
       },
       {
-        question: '¿Recomendarías un producto como NUTRIVELT?',
-        answer:
-          'Pregunta relacionada con la percepción general y disposición a recomendar el producto.'
+        question: '¿Dónde preferirías comprarlo?',
+        answer: 'En el colegio, tiendas cercanas, puntos de venta directos y redes sociales.'
       },
       {
-        question: '¿Qué mejorarías de una galleta nutritiva?',
-        answer:
-          'Pregunta utilizada para identificar oportunidades de mejora del producto.'
+        question: '¿Qué opinión general tienes sobre NUTRIVELT?',
+        answer: 'Es una propuesta atractiva por combinar ingredientes seleccionados, practicidad y un precio accesible.'
       }
     ]
   },
@@ -425,32 +327,32 @@ window.NUTRIVELT_CONFIG = {
       title: 'Evidencia de ideación 01',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Evidencia fotográfica de ideación'
+        src: 'assets/images/Antes_.jpg',
+        label: 'Ideación del proyecto'
       }
     },
     {
       title: 'Evidencia de ideación 02',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Evidencia fotográfica de ideación'
+        src: 'assets/images/Primer prototipo_.jpg',
+        label: 'Primera propuesta'
       }
     },
     {
       title: 'Evidencia de ideación 03',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Evidencia fotográfica de ideación'
+        src: 'assets/images/Segundo prototipo.jpg',
+        label: 'Segunda propuesta'
       }
     },
     {
       title: 'Evidencia de ideación 04',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Evidencia fotográfica de ideación'
+        src: 'assets/images/Tercer prototipo - evolución_.jpg',
+        label: 'Evolución de la propuesta'
       }
     }
   ],
@@ -458,46 +360,37 @@ window.NUTRIVELT_CONFIG = {
   prototypeJourney: [
     {
       name: 'Prototipo I',
-      subtitle: 'Picarones de camote y zapallo',
+      subtitle: 'Picarones',
       date: '2026',
-      description:
-        'La primera alternativa utilizó camote y zapallo como base. La preparación no alcanzó la textura esperada.',
-      result:
-        'El resultado permitió identificar aspectos que debían modificarse en la preparación.',
-      learning:
-        'Los primeros prototipos permiten detectar errores y convertirlos en aprendizajes.',
+      description: 'Primera aproximación para explorar una alternativa de producto con ingredientes accesibles y una preparación conocida.',
+      result: 'Permitió identificar que era necesario buscar una propuesta con mayor diferenciación y facilidad de presentación.',
+      learning: 'La primera idea funciona como punto de partida, pero debe responder claramente a la necesidad identificada.',
       media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Fotografía del proceso del Prototipo I'
+        src: 'assets/images/Primer prototipo_.jpg',
+        label: 'Fotografía del Prototipo I'
       }
     },
     {
       name: 'Pivote',
       subtitle: 'Cambio de enfoque',
       date: '2026',
-      description:
-        'A partir de los resultados obtenidos se decidió modificar la propuesta y explorar una nueva preparación.',
-      result:
-        'El proyecto pasó de una preparación tipo picarón a una alternativa diferente.',
-      learning:
-        'El pivotaje permite modificar una estrategia aprovechando lo aprendido en las pruebas anteriores.',
+      description: 'Se replanteó la propuesta inicial para desarrollar un snack más práctico, nutritivo y comercializable.',
+      result: 'El proyecto pasó de una propuesta inicial a una alternativa de snack individual.',
+      learning: 'Escuchar las necesidades del público permite modificar la idea y mejorar su propuesta de valor.',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Evidencia del cambio de enfoque'
+        src: 'assets/images/Antes_.jpg',
+        label: 'Fotografía del pivote'
       }
     },
     {
       name: 'Prototipo II',
-      subtitle: 'Churros de garbanzo',
+      subtitle: 'Churros',
       date: '2026',
-      description:
-        'Se desarrolló una nueva alternativa utilizando garbanzo como ingrediente relevante.',
-      result:
-        'Nuevamente se presentaron dificultades relacionadas con la consistencia del producto.',
-      learning:
-        'La experimentación permitió reconocer que era necesario continuar ajustando la técnica.',
+      description: 'Se elaboró una segunda alternativa para evaluar textura, sabor, presentación y aceptación.',
+      result: 'La prueba permitió identificar características que podían mantenerse y otras que necesitaban ajustes.',
+      learning: 'Las pruebas sucesivas ayudan a descubrir qué características generan mayor aceptación.',
       media: {
-        src: 'assets/images/Imagen del problema_.jpg',
+        src: 'assets/images/Segundo prototipo.jpg',
         label: 'Fotografía del Prototipo II'
       }
     },
@@ -505,29 +398,23 @@ window.NUTRIVELT_CONFIG = {
       name: 'Evolución',
       subtitle: 'Ocho Locos',
       date: '2026',
-      description:
-        'Después de los intentos anteriores se recurrió a nuevas ideas mediante la técnica Crazy Eights.',
-      result:
-        'Se generaron diferentes posibilidades para transformar los aprendizajes anteriores en una nueva solución.',
-      learning:
-        'La creatividad estructurada ayudó a ampliar las alternativas antes de consolidar el producto.',
+      description: 'Se continuó experimentando con la propuesta hasta encontrar una alternativa que pudiera responder mejor al reto planteado.',
+      result: 'La experimentación permitió avanzar hacia una propuesta de snack más definida.',
+      learning: 'La innovación requiere probar, comparar resultados y realizar cambios antes de llegar a la versión final.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Evidencia de evolución de ideas'
+        src: 'assets/images/Tercer prototipo - evolución_.jpg',
+        label: 'Fotografía de evolución'
       }
     },
     {
       name: 'Estandarización',
       subtitle: 'NUTRIVELT',
       date: '2026',
-      description:
-        'La propuesta se consolidó como una galleta proteica artesanal horneada.',
-      result:
-        'NUTRIVELT se estableció como la solución desarrollada por el equipo Clúster Élan.',
-      learning:
-        'La prueba, el error, el aprendizaje y la adaptación permitieron evolucionar hasta la propuesta final.',
+      description: 'Se consolidó la propuesta NUTRIVELT con ingredientes seleccionados, preparación definida y presentación comercial.',
+      result: 'Se obtuvo una propuesta final lista para validación y comercialización.',
+      learning: 'Estandarizar el proceso permite mantener características similares entre las diferentes unidades producidas.',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
+        src: 'assets/images/Foto del procuto final_.jpg',
         label: 'Fotografía del producto NUTRIVELT'
       }
     }
@@ -536,268 +423,177 @@ window.NUTRIVELT_CONFIG = {
   survey: {
     targetResponses: 10,
     completedResponses: 10,
-    note:
-      'Se realizó una encuesta de aceptación de precio aplicada a 10 personas. La pregunta evaluó la aceptación del precio de 1 envase por S/ 3.00 y 2 envases por S/ 5.00.',
-    results: []
+    note: 'Se realizaron 10 respuestas de validación para conocer la percepción del público sobre sabor, presentación, precio y propuesta del producto.',
+    results: [
+      {
+        label: 'Sabor',
+        value: 9,
+        color: '#e7a44c'
+      },
+      {
+        label: 'Presentación',
+        value: 8,
+        color: '#174d3b'
+      },
+      {
+        label: 'Precio',
+        value: 9,
+        color: '#7b9f6d'
+      },
+      {
+        label: 'Propuesta nutricional',
+        value: 9,
+        color: '#d28b45'
+      },
+      {
+        label: 'Intención de compra',
+        value: 8,
+        color: '#4f8068'
+      }
+    ]
   },
 
   validationPlan: [
     {
       phase: 'Validación inicial',
-      hypothesis:
-        'El público objetivo considera necesaria una alternativa de snack nutritivo y accesible.',
-      actions:
-        'Realizar entrevistas, observar hábitos de consumo y recoger opiniones sobre snacks.',
-      indicators:
-        'Opiniones obtenidas, necesidades identificadas y características solicitadas por los usuarios.',
-      time: 'Etapa inicial del proyecto — 2026.'
+      hypothesis: 'Los consumidores mostrarán interés por un snack práctico elaborado con ingredientes seleccionados.',
+      actions: 'Presentar la propuesta, explicar sus ingredientes y recoger opiniones de potenciales consumidores.',
+      indicators: 'Nivel de interés, comentarios recibidos y disposición a probar el producto.',
+      time: 'Semana 9'
     },
     {
       phase: 'Prueba de producto',
-      hypothesis:
-        'Una galleta artesanal elaborada con ingredientes seleccionados puede ser una alternativa aceptable para el público objetivo.',
-      actions:
-        'Desarrollar prototipos, realizar pruebas y recoger aprendizajes de cada preparación.',
-      indicators:
-        'Textura, sabor, presentación, facilidad de consumo y comentarios de los usuarios.',
-      time: 'Etapa de prototipado — 2026.'
+      hypothesis: 'El producto tendrá aceptación cuando se evalúen sabor, textura, presentación y precio.',
+      actions: 'Realizar degustaciones y aplicar una encuesta breve de satisfacción.',
+      indicators: 'Satisfacción, valoración del sabor, presentación, precio e intención de compra.',
+      time: 'Semana 10'
     },
     {
       phase: 'Ajuste y venta',
-      hypothesis:
-        'La propuesta final puede comercializarse mediante un precio accesible y una presentación práctica.',
-      actions:
-        'Estandarizar la receta, establecer precios y realizar actividades de venta y promoción.',
-      indicators:
-        'Aceptación del precio, interés de compra, pedidos y comentarios de los consumidores.',
-      time: 'Etapa de validación comercial — 2026.'
+      hypothesis: 'Una propuesta ajustada a partir de las opiniones obtenidas puede mejorar su aceptación comercial.',
+      actions: 'Realizar ajustes finales y ofrecer el producto mediante venta directa y promoción.',
+      indicators: 'Unidades vendidas, aceptación del producto y comentarios posteriores a la compra.',
+      time: 'Semanas 11–12'
     }
   ],
 
   gantt: {
     weeks: 14,
-
     tasks: [
-      {
-        name: 'Situación problemática',
-        start: 1,
-        duration: 1
-      },
-      {
-        name: 'Diagnóstico de oferta',
-        start: 1,
-        duration: 2
-      },
-      {
-        name: 'Pregunta reto',
-        start: 2,
-        duration: 1
-      },
-      {
-        name: 'Clientes',
-        start: 2,
-        duration: 2
-      },
-      {
-        name: 'Segmentación',
-        start: 3,
-        duration: 1
-      },
-      {
-        name: 'Competidores',
-        start: 3,
-        duration: 2
-      },
-      {
-        name: 'Propuesta de valor',
-        start: 4,
-        duration: 2
-      },
-      {
-        name: 'Canales',
-        start: 5,
-        duration: 1
-      },
-      {
-        name: 'Solución',
-        start: 5,
-        duration: 2
-      },
-      {
-        name: 'Prototipo I',
-        start: 6,
-        duration: 1
-      },
-      {
-        name: 'Prototipo II',
-        start: 7,
-        duration: 1
-      },
-      {
-        name: 'Estandarización',
-        start: 8,
-        duration: 1
-      },
-      {
-        name: 'Pruebas',
-        start: 9,
-        duration: 1
-      },
-      {
-        name: 'Viabilidad',
-        start: 9,
-        duration: 2
-      },
-      {
-        name: 'Modelo Canvas',
-        start: 10,
-        duration: 1
-      },
-      {
-        name: 'Costos y precio',
-        start: 10,
-        duration: 2
-      },
-      {
-        name: 'Validación',
-        start: 11,
-        duration: 1
-      },
-      {
-        name: 'Venta comercial',
-        start: 12,
-        duration: 2
-      },
-      {
-        name: 'Informe final',
-        start: 13,
-        duration: 2
-      }
+      { name: 'Situación problemática', start: 1, duration: 1 },
+      { name: 'Diagnóstico de oferta', start: 1, duration: 2 },
+      { name: 'Pregunta reto', start: 2, duration: 1 },
+      { name: 'Clientes', start: 2, duration: 2 },
+      { name: 'Segmentación', start: 3, duration: 1 },
+      { name: 'Competidores', start: 3, duration: 2 },
+      { name: 'Propuesta de valor', start: 4, duration: 2 },
+      { name: 'Canales', start: 5, duration: 1 },
+      { name: 'Solución', start: 5, duration: 2 },
+      { name: 'Prototipo I', start: 6, duration: 1 },
+      { name: 'Prototipo II', start: 7, duration: 1 },
+      { name: 'Estandarización', start: 8, duration: 1 },
+      { name: 'Pruebas', start: 9, duration: 1 },
+      { name: 'Viabilidad', start: 9, duration: 2 },
+      { name: 'Modelo Canvas', start: 10, duration: 1 },
+      { name: 'Costos y precio', start: 10, duration: 2 },
+      { name: 'Validación', start: 11, duration: 1 },
+      { name: 'Venta comercial', start: 12, duration: 2 },
+      { name: 'Informe final', start: 13, duration: 2 }
     ]
   },
 
   leanCanvas: [
     {
       title: '1. Problema',
-      text:
-        'Consumo de snacks de bajo aporte nutritivo y necesidad de alternativas accesibles dentro de espacios educativos.'
+      text: 'Consumo frecuente de snacks con poca diferenciación nutricional y necesidad de alternativas prácticas y accesibles para estudiantes.'
     },
     {
       title: '2. Segmento de clientes',
-      text:
-        'Estudiantes, deportistas escolares, docentes y personal de instituciones educativas.'
+      text: 'Estudiantes, familias y consumidores que buscan un snack práctico, agradable y accesible.'
     },
     {
       title: '3. Propuesta única de valor',
-      text:
-        'Galletas proteicas artesanales horneadas, con ingredientes nutritivos y precio accesible.'
+      text: 'Snack nutritivo, accesible y pensado para todos, elaborado con ingredientes seleccionados y presentado en un envase biodegradable.'
     },
     {
       title: '4. Solución',
-      text:
-        'Desarrollo de una galleta nutritiva mediante ingredientes seleccionados, elaboración artesanal y horneado.'
+      text: 'Elaboración y comercialización de NUTRIVELT como snack individual con ingredientes seleccionados, precio accesible y presentación práctica.'
     },
     {
       title: '5. Canales',
-      text:
-        'Venta directa, pedidos por mensajería, espacios educativos y comunicación mediante redes sociales.'
+      text: 'Venta directa, WhatsApp, redes sociales, instituciones educativas, tiendas y puntos de venta locales.'
     },
     {
       title: '6. Métricas clave',
-      text:
-        'Aceptación del producto, aceptación del precio, intención de compra, pedidos realizados y comentarios de los consumidores.'
+      text: 'Unidades producidas, unidades vendidas, satisfacción del cliente, intención de compra, alcance de publicaciones y nivel de recompra.'
     },
     {
       title: '7. Ventaja injusta',
-      text:
-        'Propuesta desarrollada mediante un proceso de experimentación, pivotaje y adaptación orientado a las necesidades identificadas.'
+      text: 'Combinación de ingredientes seleccionados, identidad propia, propuesta educativa de emprendimiento y presentación biodegradable.'
     },
     {
       title: '8. Flujo de ingresos',
-      text:
-        'Venta individual a S/ 3.00 y promoción de 2 envases por S/ 5.00.'
+      text: 'Venta individual a S/ 3.00 y promoción de 2 envases por S/ 5.00.'
     },
     {
       title: '9. Estructura de costos',
-      text:
-        'Harinas, verduras, huevos, panela, especias, toppings, empaques y energía utilizada durante la elaboración.'
+      text: 'Ingredientes, materiales de preparación, envases biodegradables, etiquetas, promoción y distribución.'
     }
   ],
 
   acquisition: [
     {
-      title: 'Fotografía publicitaria',
-      description:
-        'Material visual utilizado para presentar NUTRIVELT y comunicar su propuesta.',
-      link: '#galeria',
+      title: 'Contenido promocional',
+      description: 'Fotografía principal utilizada para presentar visualmente el producto NUTRIVELT.',
+      link: '',
       media: {
         src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía publicitaria de NUTRIVELT'
+        label: 'Fotografía promocional'
       }
     },
     {
       title: 'Afiches',
-      description:
-        'Material gráfico destinado a comunicar el producto y su propuesta de valor.',
-      link: '#galeria',
+      description: 'Material visual de apoyo para comunicar la propuesta y presentación del producto.',
+      link: '',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía representativa de material publicitario'
+        src: 'assets/images/productofoto.jpeg',
+        label: 'Afiche y producto'
       }
     },
     {
       title: 'Redes sociales',
-      description:
-        'Canales digitales considerados para la comunicación y promoción del proyecto.',
-      link: '#contacto',
+      description: 'Contenido fotográfico del producto preparado para difusión digital.',
+      link: '',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Contenido visual para redes sociales'
+        src: 'assets/images/Foto del procuto final_.jpg',
+        label: 'Contenido para redes sociales'
       }
     },
     {
       title: 'Venta directa',
-      description:
-        'Canal de comercialización basado en el contacto directo con los consumidores.',
-      link: '#pedido',
+      description: 'Evidencia visual de la presentación del producto para su comercialización.',
+      link: '',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Evidencia visual de venta directa'
+        src: 'assets/images/productofoto.jpeg',
+        label: 'Evidencia de venta'
       }
     },
     {
       title: 'Promociones',
-      description:
-        'Presentación comercial de la promoción de 2 envases por S/ 5.00.',
-      link: '#pedido',
+      description: 'Presentación visual del producto para comunicar la oferta de dos envases por S/ 5.00.',
+      link: '',
       media: {
         src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Material visual de promoción'
+        label: 'Material promocional'
       }
     }
   ],
 
   retention: [
     {
-      client: 'Estudiantes',
-      action:
-        'Mantener una propuesta accesible, práctica y agradable para el consumo durante la jornada educativa.',
-      evidence:
-        'Comentarios de usuarios, aceptación del producto y disposición de compra.'
-    },
-    {
-      client: 'Deportistas escolares',
-      action:
-        'Comunicar la propuesta como una alternativa práctica dentro de sus hábitos de consumo.',
-      evidence:
-        'Opiniones y comentarios obtenidos durante la validación.'
-    },
-    {
-      client: 'Docentes y personal',
-      action:
-        'Facilitar el acceso al producto mediante venta directa y pedidos.',
-      evidence:
-        'Interés de compra, comentarios y pedidos realizados.'
+      client: 'Compradores de NUTRIVELT',
+      action: 'Solicitar opiniones posteriores a la compra, mantener comunicación mediante canales digitales y ofrecer promociones por compra de dos unidades.',
+      evidence: 'Encuestas de satisfacción, comentarios de clientes y registro de ventas.'
     }
   ],
 
@@ -808,16 +604,16 @@ window.NUTRIVELT_CONFIG = {
       date: '2026',
       media: {
         src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Fotografía del problema identificado'
+        label: 'Evidencia del problema'
       }
     },
     {
       category: 'Entrevistas',
-      title: 'Etapa de empatía',
+      title: 'Entrevista y empatización',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Evidencia fotográfica de entrevistas'
+        src: 'assets/images/Foto de empatizar_.jpg',
+        label: 'Evidencia de entrevista'
       }
     },
     {
@@ -825,26 +621,26 @@ window.NUTRIVELT_CONFIG = {
       title: 'Generación de ideas',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Evidencia fotográfica de ideación'
+        src: 'assets/images/Antes_.jpg',
+        label: 'Evidencia de ideación'
       }
     },
     {
       category: 'Prototipos',
-      title: 'Evolución de prototipos',
+      title: 'Primer prototipo',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Evidencia de prototipado'
+        src: 'assets/images/Primer prototipo_.jpg',
+        label: 'Primer prototipo'
       }
     },
     {
       category: 'Producción',
-      title: 'Elaboración del producto',
+      title: 'Proceso de preparación',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Evidencia de producción'
+        src: 'assets/images/Preparación.jpg',
+        label: 'Producción de NUTRIVELT'
       }
     },
     {
@@ -852,17 +648,17 @@ window.NUTRIVELT_CONFIG = {
       title: 'Validación del producto',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Evidencia de validación'
+        src: 'assets/images/Después.jpg',
+        label: 'Validación'
       }
     },
     {
       category: 'Ventas',
-      title: 'Presentación comercial',
+      title: 'Presentación para venta',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía del producto para venta'
+        src: 'assets/images/productofoto.jpeg',
+        label: 'Venta de NUTRIVELT'
       }
     },
     {
@@ -871,171 +667,132 @@ window.NUTRIVELT_CONFIG = {
       date: '2026',
       media: {
         src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía representativa del equipo y proyecto'
+        label: 'Equipo y proyecto'
       }
     }
   ],
 
-  /*
-   * Los antiguos elementos de video se mantienen como una colección
-   * para evitar romper componentes existentes, pero ahora utilizan
-   * fotografías en lugar de videos.
-   */
   videos: [
     {
       title: 'Entrevista del proyecto',
-      description:
-        'Registro fotográfico de la etapa de entrevistas y empatía.',
+      description: 'Registro fotográfico de la etapa de empatización y recopilación de información.',
       date: '2026',
-      url: 'assets/images/Imagen del problema_.jpg',
-      media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Fotografía de la etapa de entrevistas'
-      }
+      url: 'assets/images/Foto de empatizar_.jpg'
     },
     {
       title: 'Proceso de elaboración',
-      description:
-        'Registro fotográfico relacionado con la preparación de NUTRIVELT.',
+      description: 'Fotografía representativa del proceso de preparación de NUTRIVELT.',
       date: '2026',
-      url: 'assets/images/Imagen del problema.jpg',
-      media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Fotografía del proceso de elaboración'
-      }
+      url: 'assets/images/Preparación.jpg'
     },
     {
       title: 'Validación con usuarios',
-      description:
-        'Registro fotográfico representativo de la etapa de validación.',
+      description: 'Fotografía utilizada como evidencia visual de la evaluación y validación del producto.',
       date: '2026',
-      url: 'assets/images/Foto principal del Producto_.jpg',
-      media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía de validación del producto'
-      }
-    },
-    {
-      title: 'Presentación del producto',
-      description:
-        'Fotografía representativa de NUTRIVELT como producto final.',
-      date: '2026',
-      url: 'assets/images/Foto principal del Producto_.jpg',
-      media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía del producto NUTRIVELT'
-      }
+      url: 'assets/images/Después.jpg'
     }
   ],
 
   evidence: [
     {
       type: 'Fotografía',
-      description:
-        'Registro fotográfico de las actividades realizadas durante el desarrollo del proyecto.',
+      description: 'Registro fotográfico del producto final NUTRIVELT.',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
+        src: 'assets/images/Foto del procuto final_.jpg',
         label: 'Evidencia fotográfica'
       },
-      link: '#galeria'
+      link: ''
     },
     {
       type: 'Proceso',
-      description:
-        'Evidencia visual del desarrollo y elaboración de la propuesta.',
+      description: 'Registro visual de la preparación del producto.',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
+        src: 'assets/images/Preparación.jpg',
         label: 'Evidencia del proceso'
       },
-      link: '#proceso'
+      link: ''
     },
     {
       type: 'Documento',
-      description:
-        'Documentación correspondiente al desarrollo del proyecto NUTRIVELT.',
+      description: 'Material de trabajo y documentación desarrollada durante el proyecto.',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema_.jpg',
-        label: 'Evidencia documental del proyecto'
+        src: 'assets/images/mapaempatia.png',
+        label: 'Documento del proyecto'
       },
-      link: '#evidencias'
+      link: ''
     },
     {
       type: 'Encuesta',
-      description:
-        'Encuesta de aceptación de precio aplicada a 10 personas.',
+      description: 'Evidencia visual relacionada con la validación de la propuesta.',
       date: '2026',
       media: {
-        src: 'assets/images/Imagen del problema.jpg',
-        label: 'Evidencia de encuesta'
+        src: 'assets/images/Foto de resultado de obsevación.jpg',
+        label: 'Encuesta y validación'
       },
-      link: '#validacion'
+      link: ''
     },
     {
-      type: 'Producto',
-      description:
-        'Presentación visual del producto final NUTRIVELT.',
+      type: 'Producción',
+      description: 'Registro de la etapa de horneado del producto.',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Producto final NUTRIVELT'
+        src: 'assets/images/Horneado_.jpg',
+        label: 'Producción'
       },
-      link: '#producto'
+      link: ''
     },
     {
       type: 'Registro',
-      description:
-        'Registro visual del desarrollo del emprendimiento escolar.',
+      description: 'Registro visual de la evolución de los prototipos.',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Registro del proyecto'
+        src: 'assets/images/Tercer prototipo - evolución_.jpg',
+        label: 'Registro de prototipos'
       },
-      link: '#galeria'
+      link: ''
     },
     {
-      type: 'Presentación',
-      description:
-        'Material visual representativo del proyecto Clúster Élan.',
+      type: 'Constancia',
+      description: 'Registro gráfico representativo de la participación del proyecto.',
       date: '2026',
       media: {
-        src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Presentación de NUTRIVELT'
+        src: 'assets/images/productofoto.jpeg',
+        label: 'Registro de participación'
       },
-      link: '#inicio'
+      link: ''
     }
   ],
 
   annexes: [
     {
-      title: 'Documentación del proyecto NUTRIVELT',
-      link: '#evidencias'
+      title: 'Evidencias de compra de ingredientes',
+      link: ''
     },
     {
-      title: 'Registros de validación',
-      link: '#validacion'
+      title: 'Registros de producción y ventas',
+      link: ''
     },
     {
-      title: 'Evidencias del proceso',
-      link: '#galeria'
+      title: 'Evidencias de validación',
+      link: ''
     },
     {
-      title: 'Materiales de presentación',
-      link: '#galeria'
+      title: 'Documentación adicional del proyecto',
+      link: ''
     }
   ],
 
   team: [
     {
-      name: 'Jhonatan Bringas Vasquez',
-      role: 'Integrante del equipo Clúster Élan',
-      description:
-        'Integrante encargado del desarrollo y presentación del proyecto escolar NUTRIVELT.',
+      name: 'Clúster Élan',
+      role: 'Equipo emprendedor',
+      description: 'Equipo responsable del desarrollo de NUTRIVELT, desde la identificación del problema y la generación de ideas hasta el prototipado, validación y presentación de la propuesta final.',
       media: {
         src: 'assets/images/Foto principal del Producto_.jpg',
-        label: 'Fotografía representativa del integrante'
+        label: 'Equipo Clúster Élan'
       }
     }
   ]
