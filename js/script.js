@@ -1,12 +1,15 @@
-```javascript
 (() => {
   'use strict';
 
   const C = window.NUTRIVELT_CONFIG;
+
   if (!C) return;
 
-  const $ = (selector, root = document) => root.querySelector(selector);
-  const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+  const $ = (selector, root = document) =>
+    root.querySelector(selector);
+
+  const $$ = (selector, root = document) =>
+    [...root.querySelectorAll(selector)];
 
   const project = C.project;
 
@@ -28,7 +31,9 @@
 
     const trimmed = value.trim();
 
-    if (/^(https?:\/\/|\.\/|\.\.\/|assets\/|\/)/i.test(trimmed)) {
+    if (
+      /^(https?:\/\/|\.\/|\.\.\/|assets\/|\/)/i.test(trimmed)
+    ) {
       return trimmed;
     }
 
@@ -36,7 +41,7 @@
   };
 
 
-  const element = (tag, className, text) => {
+  const element = (tag, className = '', text) => {
     const node = document.createElement(tag);
 
     if (className) {
@@ -57,19 +62,18 @@
       `media-placeholder ${extraClass}`.trim()
     );
 
-    const text = element(
-      'span',
-      '',
-      label || 'ESPACIO PARA AGREGAR EVIDENCIA'
+    box.append(
+      element(
+        'span',
+        '',
+        label || 'ESPACIO PARA AGREGAR EVIDENCIA'
+      ),
+      element(
+        'small',
+        '',
+        'Reemplazable desde js/config.js'
+      )
     );
-
-    const hint = element(
-      'small',
-      '',
-      'Reemplazable desde js/config.js'
-    );
-
-    box.append(text, hint);
 
     return box;
   }
@@ -93,9 +97,7 @@
 
     const src = safeUrl(media.src);
 
-
     const putPlaceholder = () => {
-
       frame.replaceChildren(
         placeholder(media.label)
       );
@@ -135,7 +137,9 @@
 
     if (clickable) {
 
-      frame.classList.add('clickable-media');
+      frame.classList.add(
+        'clickable-media'
+      );
 
       frame.tabIndex = 0;
 
@@ -201,7 +205,6 @@
 
     }
 
-
     return frame;
   }
 
@@ -211,10 +214,25 @@
     const node = $(selector);
 
     if (node) {
-      node.textContent =
-        value ??
-        '';
+      node.textContent = value ?? '';
     }
+
+  }
+
+
+  function clearAndAppend(root, ...children) {
+
+    if (!root) return;
+
+    root.replaceChildren();
+
+    children.forEach(
+      (child) => {
+        if (child) {
+          root.append(child);
+        }
+      }
+    );
 
   }
 
@@ -234,102 +252,85 @@
       project.name
     );
 
-
     setText(
       '#project-tagline',
       project.tagline
     );
-
 
     setText(
       '#team-name',
       project.team
     );
 
-
     setText(
       '#institution-short',
       project.institutionShort
     );
-
 
     setText(
       '#project-year',
       project.year
     );
 
-
     setText(
       '#unit-price',
       C.prices.unit
     );
-
 
     setText(
       '#offer-price',
       C.prices.offer
     );
 
-
     setText(
       '#sales-unit-price',
       C.prices.unit
     );
-
 
     setText(
       '#sales-offer-price',
       C.prices.offer
     );
 
-
     setText(
       '#institution-name',
       project.institution
     );
-
 
     setText(
       '#institution-code',
       project.institutionCode
     );
 
-
     setText(
       '#institution-category',
       project.category
     );
-
 
     setText(
       '#cover-team',
       project.team
     );
 
-
     setText(
       '#cover-student',
       project.student
     );
-
 
     setText(
       '#cover-institution',
       project.institutionShort
     );
 
-
     setText(
       '#cover-category',
       project.category
     );
 
-
     setText(
       '#cover-year',
       project.year
     );
-
 
     setText(
       '#footer-year',
@@ -342,32 +343,28 @@
     const heroLogos =
       $('#hero-logos');
 
-
     if (heroLogos) {
 
-      const institutionLogo =
+      heroLogos.replaceChildren();
+
+      heroLogos.append(
+
         mediaFrame(
           C.media.logos.institution,
           {
             className: 'logo-slot',
             title: 'Logotipo institucional'
           }
-        );
+        ),
 
-
-      const projectLogo =
         mediaFrame(
           C.media.logos.project,
           {
             className: 'logo-slot',
             title: 'Logotipo NUTRIVELT'
           }
-        );
+        )
 
-
-      heroLogos.append(
-        institutionLogo,
-        projectLogo
       );
 
     }
@@ -378,10 +375,10 @@
     const heroMedia =
       $('#hero-media');
 
-
     if (heroMedia) {
 
-      heroMedia.append(
+      heroMedia.replaceChildren(
+
         mediaFrame(
           C.media.hero,
           {
@@ -389,6 +386,7 @@
             title: 'Foto principal del producto'
           }
         )
+
       );
 
     }
@@ -399,16 +397,17 @@
     const innovationMedia =
       $('#innovation-media');
 
-
     if (innovationMedia) {
 
-      innovationMedia.append(
+      innovationMedia.replaceChildren(
+
         mediaFrame(
           C.media.innovation,
           {
             title: 'Innovación de NUTRIVELT'
           }
         )
+
       );
 
     }
@@ -419,16 +418,17 @@
     const empathyMap =
       $('#empathy-map');
 
-
     if (empathyMap) {
 
-      empathyMap.append(
+      empathyMap.replaceChildren(
+
         mediaFrame(
           C.media.empathyMap,
           {
             title: 'Mapa de empatía'
           }
         )
+
       );
 
     }
@@ -439,16 +439,17 @@
     const institutionLogo =
       $('#institution-logo');
 
-
     if (institutionLogo) {
 
-      institutionLogo.append(
+      institutionLogo.replaceChildren(
+
         mediaFrame(
           C.media.logos.institution,
           {
             title: 'Institución educativa'
           }
         )
+
       );
 
     }
@@ -459,16 +460,17 @@
     const coverMedia =
       $('#cover-media');
 
-
     if (coverMedia) {
 
-      coverMedia.append(
+      coverMedia.replaceChildren(
+
         mediaFrame(
           C.media.cover,
           {
             title: 'Foto representativa'
           }
         )
+
       );
 
     }
@@ -479,10 +481,9 @@
     const problem =
       $('#problem-media');
 
-
     if (problem) {
 
-      problem.append(
+      problem.replaceChildren(
 
         mediaFrame(
           C.media.problem,
@@ -516,6 +517,7 @@
 
     if (!root) return;
 
+    root.replaceChildren();
 
     C.solutionSteps.forEach(
       (step) => {
@@ -525,7 +527,6 @@
             'article',
             'process-card reveal'
           );
-
 
         card.append(
 
@@ -551,7 +552,6 @@
 
         );
 
-
         root.append(card);
 
       }
@@ -571,6 +571,7 @@
 
     if (!root) return;
 
+    root.replaceChildren();
 
     C.ingredients.forEach(
       (ingredient) => {
@@ -581,10 +582,8 @@
             'ingredient-card reveal'
           );
 
-
         const info =
           element('div');
-
 
         info.append(
 
@@ -608,7 +607,6 @@
 
         );
 
-
         card.append(
 
           mediaFrame(
@@ -622,7 +620,6 @@
 
         );
 
-
         root.append(card);
 
       }
@@ -635,12 +632,18 @@
      TABLAS
   ========================================================= */
 
-  function table(rootId, headers, rows) {
+  function createTable(
+    rootId,
+    headers,
+    rows
+  ) {
 
     const root =
       $(rootId);
 
     if (!root) return;
+
+    root.replaceChildren();
 
 
     const tableEl =
@@ -650,9 +653,8 @@
       );
 
 
-    const head =
+    const thead =
       element('thead');
-
 
     const headRow =
       element('tr');
@@ -673,10 +675,10 @@
     );
 
 
-    head.append(headRow);
+    thead.append(headRow);
 
 
-    const body =
+    const tbody =
       element('tbody');
 
 
@@ -705,15 +707,15 @@
         );
 
 
-        body.append(tr);
+        tbody.append(tr);
 
       }
     );
 
 
     tableEl.append(
-      head,
-      body
+      thead,
+      tbody
     );
 
 
@@ -795,7 +797,8 @@
 
   function renderTables() {
 
-    table(
+    createTable(
+
       '#competition-table',
 
       [
@@ -803,17 +806,14 @@
           label: 'Producto',
           key: 'product'
         },
-
         {
           label: 'Características',
           key: 'features'
         },
-
         {
           label: 'Fortalezas',
           key: 'strengths'
         },
-
         {
           label: 'Limitaciones',
           key: 'limits'
@@ -821,10 +821,12 @@
       ],
 
       C.competition
+
     );
 
 
-    table(
+    createTable(
+
       '#validation-plan',
 
       [
@@ -832,22 +834,18 @@
           label: 'Fase',
           key: 'phase'
         },
-
         {
           label: 'Hipótesis',
           key: 'hypothesis'
         },
-
         {
           label: 'Acciones',
           key: 'actions'
         },
-
         {
           label: 'Indicadores',
           key: 'indicators'
         },
-
         {
           label: 'Tiempo',
           key: 'time'
@@ -855,10 +853,12 @@
       ],
 
       C.validationPlan
+
     );
 
 
-    table(
+    createTable(
+
       '#retention-table',
 
       [
@@ -866,12 +866,10 @@
           label: 'Cliente',
           key: 'client'
         },
-
         {
           label: 'Acción',
           key: 'action'
         },
-
         {
           label: 'Evidencia',
           key: 'evidence'
@@ -881,7 +879,6 @@
       C.retention.map(
         (row) => ({
           ...row,
-
           evidence:
             row.evidence ||
             'Espacio para agregar evidencia.'
@@ -907,12 +904,16 @@
 
     if (!tabs || !panel) return;
 
+    tabs.replaceChildren();
+
 
     const activate =
       (index) => {
 
         const stage =
           C.designThinking[index];
+
+        if (!stage) return;
 
 
         $$('.dt-tab', tabs)
@@ -922,12 +923,10 @@
               const active =
                 tabIndex === index;
 
-
               button.classList.toggle(
                 'active',
                 active
               );
-
 
               button.setAttribute(
                 'aria-selected',
@@ -945,17 +944,13 @@
           element('div');
 
 
-        const label =
+        text.append(
+
           element(
             'span',
             'eyebrow light',
             `${stage.number} · ${stage.title.toUpperCase()}`
-          );
-
-
-        text.append(
-
-          label,
+          ),
 
           element(
             'h3',
@@ -1031,12 +1026,10 @@
         button.type =
           'button';
 
-
         button.setAttribute(
           'role',
           'tab'
         );
-
 
         button.setAttribute(
           'aria-selected',
@@ -1080,7 +1073,7 @@
 
   /* =========================================================
      ENTREVISTA
-     ========================================================= */
+  ========================================================= */
 
   function renderInterview() {
 
@@ -1089,11 +1082,7 @@
 
     if (!accordion) return;
 
-
-    /*
-     * Ya no existe ningún video de entrevista.
-     * Solo se muestran preguntas y respuestas.
-     */
+    accordion.replaceChildren();
 
 
     C.interview.questions.forEach(
@@ -1102,11 +1091,11 @@
         const article =
           element(
             'article',
-            'accordion-item'
+            'accordion-item reveal'
           );
 
 
-        const btn =
+        const button =
           element(
             'button',
             'accordion-button',
@@ -1114,11 +1103,10 @@
           );
 
 
-        btn.type =
+        button.type =
           'button';
 
-
-        btn.setAttribute(
+        button.setAttribute(
           'aria-expanded',
           'false'
         );
@@ -1149,7 +1137,7 @@
         panel.append(inner);
 
 
-        btn.addEventListener(
+        button.addEventListener(
           'click',
           () => {
 
@@ -1159,7 +1147,7 @@
               );
 
 
-            btn.setAttribute(
+            button.setAttribute(
               'aria-expanded',
               String(open)
             );
@@ -1169,7 +1157,7 @@
 
 
         article.append(
-          btn,
+          button,
           panel
         );
 
@@ -1192,6 +1180,8 @@
       $('#ideation-gallery');
 
     if (!root) return;
+
+    root.replaceChildren();
 
 
     C.ideationGallery.forEach(
@@ -1246,6 +1236,8 @@
       $('#prototype-track');
 
     if (!root) return;
+
+    root.replaceChildren();
 
 
     C.prototypeJourney.forEach(
@@ -1360,7 +1352,6 @@
     const before =
       C.prototypeJourney[0];
 
-
     const after =
       C.prototypeJourney[
         C.prototypeJourney.length - 1
@@ -1370,16 +1361,15 @@
     const beforeMedia =
       $('#before-media');
 
-
     if (beforeMedia && before) {
 
-      beforeMedia.append(
+      beforeMedia.replaceChildren(
 
         mediaFrame(
           before.media,
           {
             title:
-              'Antes: Prototipo I'
+              `Antes: ${before.name}`
           }
         )
 
@@ -1391,16 +1381,15 @@
     const afterMedia =
       $('#after-media');
 
-
     if (afterMedia && after) {
 
-      afterMedia.append(
+      afterMedia.replaceChildren(
 
         mediaFrame(
           after.media,
           {
             title:
-              'Después: NUTRIVELT'
+              `Después: ${after.name}`
           }
         )
 
@@ -1417,119 +1406,91 @@
 
   function renderSurvey() {
 
-    setText(
-      '#survey-target',
-      C.survey.targetResponses ??
-      '—'
-    );
+    const root =
+      $('#survey-results');
+
+    if (!root) return;
+
+    root.replaceChildren();
 
 
-    setText(
-      '#survey-completed',
-      C.survey.completedResponses ??
-      '—'
-    );
-
-
-    setText(
-      '#survey-note',
-      C.survey.note ||
-      'Información pendiente'
-    );
-
-
-    const chart =
-      $('#survey-chart');
-
-    if (!chart) return;
-
-
-    const results =
-      Array.isArray(
-        C.survey.results
-      )
-        ? C.survey.results.filter(
-            (item) =>
-              Number.isFinite(
-                Number(item.value)
-              )
-          )
-        : [];
-
-
-    if (!results.length) {
-
-      chart.append(
-
-        element(
-          'div',
-          'chart-empty',
-          'Aún no hay resultados registrados. Agrega valores en js/config.js.'
-        )
-
-      );
-
-      return;
-
-    }
-
-
-    const maximum =
-      Math.max(
-        ...results.map(
-          (item) =>
-            Number(item.value)
-        ),
-        1
-      );
-
-
-    results.forEach(
-      (item) => {
-
-        const itemEl =
-          element(
-            'div',
-            'bar-item'
-          );
-
-
-        const bar =
-          element(
-            'div',
-            'bar'
-          );
-
-
-        bar.style.height =
-          `${Math.max(
-            7,
+    const percentage =
+      C.survey.targetResponses > 0
+        ? Math.round(
             (
-              Number(item.value) /
-              maximum
-            ) *
-            100
-          )}%`;
+              C.survey.completedResponses /
+              C.survey.targetResponses
+            ) * 100
+          )
+        : 0;
 
 
-        bar.title =
-          `${item.label}: ${item.value}`;
+    const progress =
+      element(
+        'div',
+        'survey-progress reveal'
+      );
 
 
-        itemEl.append(
+    progress.append(
 
-          bar,
+      element(
+        'strong',
+        '',
+        `${C.survey.completedResponses}/${C.survey.targetResponses}`
+      ),
+
+      element(
+        'span',
+        '',
+        ` respuestas registradas · ${percentage}%`
+      )
+
+    );
+
+
+    root.append(progress);
+
+
+    root.append(
+
+      element(
+        'p',
+        'survey-note reveal',
+        C.survey.note
+      )
+
+    );
+
+
+    C.survey.results.forEach(
+      (result) => {
+
+        const card =
+          element(
+            'article',
+            'survey-card reveal'
+          );
+
+
+        card.append(
 
           element(
-            'small',
+            'h3',
             '',
-            item.label
+            result.indicator
+          ),
+
+          element(
+            'p',
+            '',
+            result.value
           )
 
         );
 
 
-        chart.append(itemEl);
+        root.append(card);
 
       }
     );
@@ -1544,101 +1505,129 @@
   function renderGantt() {
 
     const root =
-      $('#gantt-chart');
+      $('#gantt-grid');
 
     if (!root) return;
 
+    root.replaceChildren();
+
 
     const weeks =
-      Number(C.gantt.weeks) ||
-      14;
+      C.gantt.weeks;
 
 
-    root.style.gridTemplateColumns =
-      `210px repeat(${weeks}, 1fr)`;
-
-
-    root.append(
-
+    const header =
       element(
         'div',
-        'gantt-head',
-        'Actividad'
-      )
+        'gantt-header'
+      );
 
+
+    header.append(
+      element(
+        'div',
+        'gantt-task-label',
+        'ACTIVIDAD'
+      )
     );
+
+
+    const weekContainer =
+      element(
+        'div',
+        'gantt-weeks'
+      );
 
 
     for (
       let week = 1;
       week <= weeks;
-      week += 1
+      week++
     ) {
 
-      root.append(
-
+      weekContainer.append(
         element(
-          'div',
-          'gantt-head',
+          'span',
+          '',
           `S${week}`
         )
-
       );
 
     }
 
 
+    header.append(
+      weekContainer
+    );
+
+
+    root.append(header);
+
+
     C.gantt.tasks.forEach(
       (task) => {
 
-        root.append(
-
+        const row =
           element(
             'div',
-            'gantt-label',
-            task.name
-          )
+            'gantt-row reveal'
+          );
 
-        );
+
+        const label =
+          element(
+            'div',
+            'gantt-task-label',
+            task.name
+          );
+
+
+        const timeline =
+          element(
+            'div',
+            'gantt-timeline'
+          );
 
 
         for (
           let week = 1;
           week <= weeks;
-          week += 1
+          week++
         ) {
-
-          const active =
-            week >= task.start &&
-            week <
-              task.start +
-              task.duration;
-
 
           const cell =
             element(
-              'div',
-              `gantt-cell ${
-                active
-                  ? 'active'
-                  : ''
-              }`
+              'span',
+              'gantt-cell'
             );
 
 
-          if (active) {
+          if (
+            week >= task.start &&
+            week <
+              task.start +
+              task.duration
+          ) {
 
-            cell.setAttribute(
-              'aria-label',
-              `${task.name}: semana ${week}`
+            cell.classList.add(
+              'active'
             );
 
           }
 
 
-          root.append(cell);
+          timeline.append(cell);
 
         }
+
+
+        row.append(
+          label,
+          timeline
+        );
+
+
+        root.append(row);
 
       }
     );
@@ -1690,10 +1679,8 @@
     anchor.href =
       validUrl;
 
-
     anchor.target =
       '_blank';
-
 
     anchor.rel =
       'noopener noreferrer';
@@ -1713,8 +1700,10 @@
     const canvas =
       $('#lean-canvas');
 
-
     if (canvas) {
+
+      canvas.replaceChildren();
+
 
       C.leanCanvas.forEach(
         (block) => {
@@ -1754,9 +1743,17 @@
     const socials =
       $('#social-buttons');
 
-
     const footer =
       $('#footer-socials');
+
+
+    if (socials) {
+      socials.replaceChildren();
+    }
+
+    if (footer) {
+      footer.replaceChildren();
+    }
 
 
     const socialItems = [
@@ -1824,7 +1821,7 @@
   function linkOrPlaceholder(
     label,
     url,
-    className
+    className = ''
   ) {
 
     const validUrl =
@@ -1835,7 +1832,7 @@
 
       return element(
         'span',
-        `${className} disabled`,
+        `${className} disabled`.trim(),
         'Link pendiente'
       );
 
@@ -1853,10 +1850,8 @@
     link.href =
       validUrl;
 
-
     link.target =
       '_blank';
-
 
     link.rel =
       'noopener noreferrer';
@@ -1873,6 +1868,8 @@
       $('#acquisition-grid');
 
     if (!root) return;
+
+    root.replaceChildren();
 
 
     C.acquisition.forEach(
@@ -1932,12 +1929,13 @@
     const filters =
       $('#gallery-filters');
 
-
     const root =
       $('#general-gallery');
 
-
     if (!filters || !root) return;
+
+    filters.replaceChildren();
+    root.replaceChildren();
 
 
     const categories = [
@@ -2002,7 +2000,6 @@
         button.type =
           'button';
 
-
         button.dataset.filter =
           category;
 
@@ -2038,7 +2035,6 @@
           mediaFrame(
             item.media,
             {
-              clickable: false,
               title: item.title
             }
           )
@@ -2137,12 +2133,13 @@
     const filters =
       $('#evidence-filters');
 
-
     const root =
       $('#evidence-grid');
 
-
     if (!filters || !root) return;
+
+    filters.replaceChildren();
+    root.replaceChildren();
 
 
     const types = [
@@ -2206,7 +2203,6 @@
 
         button.type =
           'button';
-
 
         button.dataset.filter =
           type;
@@ -2319,6 +2315,8 @@
 
     if (!root) return;
 
+    root.replaceChildren();
+
 
     C.annexes.forEach(
       (item) => {
@@ -2365,6 +2363,8 @@
       $('#team-grid');
 
     if (!root) return;
+
+    root.replaceChildren();
 
 
     C.team.forEach(
@@ -2413,14 +2413,6 @@
         );
 
 
-        /*
-         * Si el integrante tiene fotografía,
-         * se muestra.
-         *
-         * Si no tiene fotografía,
-         * se muestra un espacio.
-         */
-
         card.append(
 
           mediaFrame(
@@ -2445,7 +2437,7 @@
 
 
   /* =========================================================
-     MODAL DE IMÁGENES
+     MODAL
   ========================================================= */
 
   function openMedia(
@@ -2484,9 +2476,7 @@
     if (src) {
 
       const image =
-        document.createElement(
-          'img'
-        );
+        document.createElement('img');
 
 
       image.src =
@@ -2587,20 +2577,18 @@
     );
 
 
+    document.body.classList.add(
+      'modal-open'
+    );
+
+
     const closeButton =
       $('.modal-close', modal);
 
 
     if (closeButton) {
-
       closeButton.focus();
-
     }
-
-
-    document.body.classList.add(
-      'modal-open'
-    );
 
   }
 
@@ -2628,7 +2616,7 @@
 
     if (
       lastFocused &&
-      lastFocused.focus
+      typeof lastFocused.focus === 'function'
     ) {
 
       lastFocused.focus();
@@ -2674,25 +2662,17 @@
     const menu =
       $('#main-menu');
 
-
     const toggle =
       $('.menu-toggle');
 
-
     const nav =
       $('.nav');
-
 
     const backTop =
       $('.back-top');
 
 
-    if (
-      !menu ||
-      !toggle ||
-      !nav ||
-      !backTop
-    ) return;
+    if (!menu || !toggle) return;
 
 
     toggle.addEventListener(
@@ -2747,41 +2727,51 @@
       );
 
 
-    backTop.addEventListener(
-      'click',
-      () => {
+    if (backTop) {
 
-        window.scrollTo(
-          {
+      backTop.addEventListener(
+        'click',
+        () => {
+
+          window.scrollTo({
             top: 0,
             behavior: 'smooth'
+          });
+
+        }
+      );
+
+    }
+
+
+    if (nav) {
+
+      window.addEventListener(
+        'scroll',
+        () => {
+
+          nav.classList.toggle(
+            'scrolled',
+            window.scrollY > 30
+          );
+
+
+          if (backTop) {
+
+            backTop.classList.toggle(
+              'show',
+              window.scrollY > 600
+            );
+
           }
-        );
 
-      }
-    );
+        },
+        {
+          passive: true
+        }
+      );
 
-
-    window.addEventListener(
-      'scroll',
-      () => {
-
-        nav.classList.toggle(
-          'scrolled',
-          window.scrollY > 30
-        );
-
-
-        backTop.classList.toggle(
-          'show',
-          window.scrollY > 600
-        );
-
-      },
-      {
-        passive: true
-      }
-    );
+    }
 
 
     const targetLinks =
@@ -2792,10 +2782,8 @@
             (link) => [
 
               link
-                .getAttribute(
-                  'href'
-                )
-                ?.slice(1),
+                .getAttribute('href')
+                ?.replace('#', ''),
 
               link
 
@@ -2816,54 +2804,62 @@
         .filter(Boolean);
 
 
-    const observer =
-      new IntersectionObserver(
+    if (
+      'IntersectionObserver' in window
+    ) {
 
-        (entries) =>
+      const observer =
+        new IntersectionObserver(
 
-          entries.forEach(
-            (entry) => {
+          (entries) => {
 
-              if (
-                entry.isIntersecting
-              ) {
+            entries.forEach(
+              (entry) => {
 
-                $$('#main-menu a')
-                  .forEach(
-                    (link) =>
-                      link.classList.remove(
-                        'active'
-                      )
-                  );
+                if (
+                  entry.isIntersecting
+                ) {
+
+                  $$('#main-menu a')
+                    .forEach(
+                      (link) =>
+                        link.classList.remove(
+                          'active'
+                        )
+                    );
 
 
-                targetLinks
-                  .get(
-                    entry.target.id
-                  )
-                  ?.classList.add(
-                    'active'
-                  );
+                  targetLinks
+                    .get(
+                      entry.target.id
+                    )
+                    ?.classList.add(
+                      'active'
+                    );
+
+                }
 
               }
+            );
 
-            }
-          ),
+          },
 
-        {
-          rootMargin:
-            '-25% 0px -62% 0px',
+          {
+            rootMargin:
+              '-25% 0px -62% 0px',
 
-          threshold: 0
-        }
+            threshold: 0
+          }
 
+        );
+
+
+      sections.forEach(
+        (section) =>
+          observer.observe(section)
       );
 
-
-    sections.forEach(
-      (section) =>
-        observer.observe(section)
-    );
+    }
 
   }
 
@@ -2874,10 +2870,39 @@
 
   function enableReveal() {
 
+    const nodes =
+      $$('.reveal');
+
+
+    if (!nodes.length) return;
+
+
+    /*
+     * Mostramos inicialmente los elementos
+     * para evitar que la página quede en blanco
+     * si el navegador no soporta IntersectionObserver.
+     */
+
+    if (
+      !('IntersectionObserver' in window)
+    ) {
+
+      nodes.forEach(
+        (node) =>
+          node.classList.add(
+            'visible'
+          )
+      );
+
+      return;
+
+    }
+
+
     const reveal =
       new IntersectionObserver(
 
-        (entries) =>
+        (entries) => {
 
           entries.forEach(
             (entry) => {
@@ -2898,20 +2923,21 @@
               }
 
             }
-          ),
+          );
+
+        },
 
         {
-          threshold: 0.08
+          threshold: 0.03
         }
 
       );
 
 
-    $$('.reveal')
-      .forEach(
-        (node) =>
-          reveal.observe(node)
-      );
+    nodes.forEach(
+      (node) =>
+        reveal.observe(node)
+    );
 
   }
 
@@ -2941,7 +2967,6 @@
     const previous =
       $('#modal-prev');
 
-
     const next =
       $('#modal-next');
 
@@ -2966,6 +2991,22 @@
       );
 
     }
+
+
+    modal.addEventListener(
+      'click',
+      (event) => {
+
+        if (
+          event.target === modal
+        ) {
+
+          closeModal();
+
+        }
+
+      }
+    );
 
 
     document.addEventListener(
@@ -3021,43 +3062,68 @@
 
   function init() {
 
-    fillProjectIdentity();
+    try {
 
-    renderSolution();
+      fillProjectIdentity();
 
-    renderIngredients();
+      renderSolution();
 
-    renderTables();
+      renderIngredients();
 
-    renderDesignThinking();
+      renderTables();
 
-    renderInterview();
+      renderDesignThinking();
 
-    renderIdeation();
+      renderInterview();
 
-    renderPrototypes();
+      renderIdeation();
 
-    renderSurvey();
+      renderPrototypes();
 
-    renderGantt();
+      renderSurvey();
 
-    renderBusiness();
+      renderGantt();
 
-    renderAcquisition();
+      renderBusiness();
 
-    renderGallery();
+      renderAcquisition();
 
-    renderEvidence();
+      renderGallery();
 
-    renderAnnexes();
+      renderEvidence();
 
-    renderTeam();
+      renderAnnexes();
 
-    enableNavigation();
+      renderTeam();
 
-    enableReveal();
+      enableNavigation();
 
-    bindModal();
+      enableReveal();
+
+      bindModal();
+
+    } catch (error) {
+
+      console.error(
+        'Error al cargar NUTRIVELT:',
+        error
+      );
+
+      /*
+       * Si ocurre un error, mostramos los elementos
+       * .reveal para evitar que toda la página
+       * permanezca invisible.
+       */
+
+      $$('.reveal')
+        .forEach(
+          (node) =>
+            node.classList.add(
+              'visible'
+            )
+        );
+
+    }
 
   }
 
@@ -3068,4 +3134,3 @@
   );
 
 })();
-```
