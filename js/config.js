@@ -1,7 +1,5 @@
 /*
  * NUTRIVELT — configuración principal
- * ---------------------------------------------------------------
- * Contenido, imágenes, textos, precios y estructura del proyecto.
  */
 
 window.NUTRIVELT_CONFIG = {
@@ -33,12 +31,10 @@ window.NUTRIVELT_CONFIG = {
   },
 
   media: {
-
     logos: {
       institution: {
         src: 'assets/images/LogoConFondoRoosevelt (1).png'
       },
-
       project: {
         src: 'assets/images/logonutrivelt.jpeg'
       }
@@ -69,13 +65,7 @@ window.NUTRIVELT_CONFIG = {
     }
   },
 
-
-  /*
-   * PROCESO DE ELABORACIÓN
-   */
-
   solutionSteps: [
-
     {
       title: 'Ingredientes',
       text:
@@ -84,7 +74,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Foto de los ingredientes_.jpg'
       }
     },
-
     {
       title: 'Preparación',
       text:
@@ -93,7 +82,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Preparación.jpg'
       }
     },
-
     {
       title: 'Horneado',
       text:
@@ -102,7 +90,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Horneado_.jpg'
       }
     },
-
     {
       title: 'Producto final',
       text:
@@ -113,13 +100,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * INGREDIENTES
-   */
-
   ingredients: [
-
     {
       name: 'Camote',
       description:
@@ -130,7 +111,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/camote.jpg'
       }
     },
-
     {
       name: 'Zapallo',
       description:
@@ -141,7 +121,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/zapallojpg.jpg'
       }
     },
-
     {
       name: 'Anís',
       description:
@@ -152,7 +131,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/anis.jpg'
       }
     },
-
     {
       name: 'Harina de garbanzo',
       description:
@@ -163,7 +141,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/HARINA DE GARBANZO.jpg'
       }
     },
-
     {
       name: 'Harina común',
       description:
@@ -174,7 +151,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/harina.jpg'
       }
     },
-
     {
       name: 'Huevo',
       description:
@@ -185,7 +161,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/huevo.jpg'
       }
     },
-
     {
       name: 'Panela',
       description:
@@ -196,7 +171,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/panela.jpg'
       }
     },
-
     {
       name: 'Canela',
       description:
@@ -207,7 +181,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/canela.jpg'
       }
     },
-
     {
       name: 'Clavo de olor',
       description:
@@ -220,13 +193,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * COMPETENCIA
-   */
-
   competition: [
-
     {
       product: 'Alternativas convencionales',
       features:
@@ -236,7 +203,6 @@ window.NUTRIVELT_CONFIG = {
       limits:
         'No necesariamente están orientados a una propuesta elaborada con ingredientes seleccionados y una alternativa de presentación biodegradable.'
     },
-
     {
       product: 'NUTRIVELT',
       features:
@@ -248,13 +214,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * DESIGN THINKING
-   */
-
   designThinking: [
-
     {
       id: 'empathize',
       number: '01',
@@ -267,7 +227,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Foto de empatizar_.jpg'
       }
     },
-
     {
       id: 'define',
       number: '02',
@@ -280,7 +239,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Foto de resultado de obsevación.jpg'
       }
     },
-
     {
       id: 'ideate',
       number: '03',
@@ -293,7 +251,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Primer prototipo_.jpg'
       }
     },
-
     {
       id: 'prototype',
       number: '04',
@@ -306,7 +263,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Segundo prototipo.jpg'
       }
     },
-
     {
       id: 'evaluate',
       number: '05',
@@ -321,87 +277,68 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * ENTREVISTA
-   */
-
   interview: {
-
     questions: [
-
       {
         question: '¿Qué tipo de snacks consumes habitualmente?',
         answer:
           'Se buscó conocer los productos que los estudiantes consumen con mayor frecuencia durante sus actividades académicas.'
       },
-
       {
         question: '¿Con qué frecuencia consumes snacks durante la jornada escolar?',
         answer:
           'La pregunta permitió identificar la frecuencia de consumo y los momentos en los que los estudiantes suelen adquirir estos productos.'
       },
-
       {
         question: '¿Qué características buscas en un snack?',
         answer:
           'Se exploraron características relacionadas con sabor, precio, practicidad, presentación y composición.'
       },
-
       {
         question: '¿Qué importancia tiene para ti que un snack sea nutritivo?',
         answer:
           'La pregunta permitió conocer la importancia que los consumidores atribuyen al valor nutricional de los productos que consumen.'
       },
-
       {
         question: '¿Qué precio considerarías accesible para un snack?',
         answer:
           'La información permitió considerar el factor económico dentro de la propuesta de valor del producto.'
       },
-
       {
         question: '¿Qué sabores prefieres en un snack?',
         answer:
           'Se exploraron preferencias de sabor para orientar las características sensoriales de la propuesta.'
       },
-
       {
         question: '¿Qué opinas sobre utilizar ingredientes naturales?',
         answer:
           'La pregunta permitió conocer la percepción de los usuarios frente al uso de ingredientes de origen natural.'
       },
-
       {
         question: '¿Qué importancia tiene la presentación del producto?',
         answer:
           'La presentación fue considerada como parte de la experiencia de consumo y de la percepción inicial del producto.'
       },
-
       {
         question: '¿Comprarías un snack elaborado con ingredientes como camote y zapallo?',
         answer:
           'La pregunta permitió explorar la aceptación potencial de una propuesta basada en ingredientes utilizados en NUTRIVELT.'
       },
-
       {
         question: '¿Qué mejorarías de un snack dirigido a estudiantes?',
         answer:
           'Se buscó identificar oportunidades de mejora relacionadas con sabor, precio, tamaño, presentación y facilidad de consumo.'
       },
-
       {
         question: '¿Qué opinas de utilizar un envase biodegradable?',
         answer:
           'La pregunta permitió conocer la percepción de los usuarios respecto a una presentación que considere el impacto ambiental.'
       },
-
       {
         question: '¿Recomendarías un producto que cumpla con estas características?',
         answer:
           'La pregunta permitió explorar la disposición de los usuarios a recomendar una alternativa que combine practicidad, accesibilidad y características nutricionales.'
       },
-
       {
         question: '¿Qué característica haría que eligieras NUTRIVELT frente a otro snack?',
         answer:
@@ -410,13 +347,7 @@ window.NUTRIVELT_CONFIG = {
     ]
   },
 
-
-  /*
-   * GALERÍA DE IDEACIÓN
-   */
-
   ideationGallery: [
-
     {
       title: 'Primeras ideas',
       date: '2026',
@@ -424,7 +355,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Primer prototipo_.jpg'
       }
     },
-
     {
       title: 'Experimentación inicial',
       date: '2026',
@@ -432,7 +362,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Segundo prototipo.jpg'
       }
     },
-
     {
       title: 'Evolución de la propuesta',
       date: '2026',
@@ -440,7 +369,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Tercer prototipo - evolución_.jpg'
       }
     },
-
     {
       title: 'Resultados de observación',
       date: '2026',
@@ -450,13 +378,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * EVOLUCIÓN DE PROTOTIPOS
-   */
-
   prototypeJourney: [
-
     {
       name: 'Prototipo I',
       subtitle: 'Picarones',
@@ -471,7 +393,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Primer prototipo_.jpg'
       }
     },
-
     {
       name: 'Pivote',
       subtitle: 'Cambio de enfoque',
@@ -486,7 +407,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Segundo prototipo.jpg'
       }
     },
-
     {
       name: 'Prototipo II',
       subtitle: 'Churros',
@@ -501,7 +421,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Segundo prototipo.jpg'
       }
     },
-
     {
       name: 'Evolución',
       subtitle: 'Ocho Locos',
@@ -516,7 +435,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Tercer prototipo - evolución_.jpg'
       }
     },
-
     {
       name: 'Estandarización',
       subtitle: 'NUTRIVELT',
@@ -533,34 +451,24 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * ENCUESTA
-   */
-
   survey: {
     targetResponses: 10,
     completedResponses: 10,
-
     note:
       'La encuesta fue planteada para recoger información de los usuarios y conocer su percepción sobre la propuesta NUTRIVELT.',
-
     results: [
       {
         indicator: 'Interés por una alternativa de snack nutritivo',
         value: 'Información recopilada mediante cuestionario'
       },
-
       {
         indicator: 'Percepción del sabor',
         value: 'Información recopilada mediante cuestionario'
       },
-
       {
         indicator: 'Percepción de la presentación',
         value: 'Información recopilada mediante cuestionario'
       },
-
       {
         indicator: 'Percepción del precio',
         value: 'Información recopilada mediante cuestionario'
@@ -568,13 +476,7 @@ window.NUTRIVELT_CONFIG = {
     ]
   },
 
-
-  /*
-   * PLAN DE VALIDACIÓN
-   */
-
   validationPlan: [
-
     {
       phase: 'Validación inicial',
       hypothesis:
@@ -586,7 +488,6 @@ window.NUTRIVELT_CONFIG = {
       time:
         'Primera etapa del proyecto'
     },
-
     {
       phase: 'Prueba de producto',
       hypothesis:
@@ -598,7 +499,6 @@ window.NUTRIVELT_CONFIG = {
       time:
         'Etapa de prototipado y validación'
     },
-
     {
       phase: 'Ajuste y venta',
       hypothesis:
@@ -612,186 +512,72 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * CRONOGRAMA
-   */
-
   gantt: {
     weeks: 14,
-
     tasks: [
-      {
-        name: 'Situación problemática',
-        start: 1,
-        duration: 1
-      },
-
-      {
-        name: 'Diagnóstico de oferta',
-        start: 1,
-        duration: 2
-      },
-
-      {
-        name: 'Pregunta reto',
-        start: 2,
-        duration: 1
-      },
-
-      {
-        name: 'Clientes',
-        start: 2,
-        duration: 2
-      },
-
-      {
-        name: 'Segmentación',
-        start: 3,
-        duration: 1
-      },
-
-      {
-        name: 'Competidores',
-        start: 3,
-        duration: 2
-      },
-
-      {
-        name: 'Propuesta de valor',
-        start: 4,
-        duration: 2
-      },
-
-      {
-        name: 'Canales',
-        start: 5,
-        duration: 1
-      },
-
-      {
-        name: 'Solución',
-        start: 5,
-        duration: 2
-      },
-
-      {
-        name: 'Prototipo I',
-        start: 6,
-        duration: 1
-      },
-
-      {
-        name: 'Prototipo II',
-        start: 7,
-        duration: 1
-      },
-
-      {
-        name: 'Estandarización',
-        start: 8,
-        duration: 1
-      },
-
-      {
-        name: 'Pruebas',
-        start: 9,
-        duration: 1
-      },
-
-      {
-        name: 'Viabilidad',
-        start: 9,
-        duration: 2
-      },
-
-      {
-        name: 'Modelo Canvas',
-        start: 10,
-        duration: 1
-      },
-
-      {
-        name: 'Costos y precio',
-        start: 10,
-        duration: 2
-      },
-
-      {
-        name: 'Validación',
-        start: 11,
-        duration: 1
-      },
-
-      {
-        name: 'Venta comercial',
-        start: 12,
-        duration: 2
-      },
-
-      {
-        name: 'Informe final',
-        start: 13,
-        duration: 2
-      }
+      { name: 'Situación problemática', start: 1, duration: 1 },
+      { name: 'Diagnóstico de oferta', start: 1, duration: 2 },
+      { name: 'Pregunta reto', start: 2, duration: 1 },
+      { name: 'Clientes', start: 2, duration: 2 },
+      { name: 'Segmentación', start: 3, duration: 1 },
+      { name: 'Competidores', start: 3, duration: 2 },
+      { name: 'Propuesta de valor', start: 4, duration: 2 },
+      { name: 'Canales', start: 5, duration: 1 },
+      { name: 'Solución', start: 5, duration: 2 },
+      { name: 'Prototipo I', start: 6, duration: 1 },
+      { name: 'Prototipo II', start: 7, duration: 1 },
+      { name: 'Estandarización', start: 8, duration: 1 },
+      { name: 'Pruebas', start: 9, duration: 1 },
+      { name: 'Viabilidad', start: 9, duration: 2 },
+      { name: 'Modelo Canvas', start: 10, duration: 1 },
+      { name: 'Costos y precio', start: 10, duration: 2 },
+      { name: 'Validación', start: 11, duration: 1 },
+      { name: 'Venta comercial', start: 12, duration: 2 },
+      { name: 'Informe final', start: 13, duration: 2 }
     ]
   },
 
-
-  /*
-   * LEAN CANVAS
-   */
-
   leanCanvas: [
-
     {
       title: '1. Problema',
       text:
         'Consumo frecuente de snacks de bajo aporte nutricional entre estudiantes y necesidad de contar con alternativas prácticas y accesibles.'
     },
-
     {
       title: '2. Segmento de clientes',
       text:
         'Estudiantes del Colegio Privado Preuniversitario "Roosevelt" y consumidores interesados en alternativas prácticas de snack.'
     },
-
     {
       title: '3. Propuesta única de valor',
       text:
         'NUTRIVELT ofrece un snack nutritivo, accesible y práctico, elaborado con ingredientes seleccionados y pensado para el consumo de los estudiantes.'
     },
-
     {
       title: '4. Solución',
       text:
         'Elaboración de un snack a base de camote, zapallo, harina de garbanzo, harina, huevo, panela y especias seleccionadas.'
     },
-
     {
       title: '5. Canales',
       text:
         'Venta directa, WhatsApp, redes sociales, cafetines, tiendas y comunicación presencial.'
     },
-
     {
       title: '6. Métricas clave',
       text:
         'Interés de los consumidores, aceptación del producto, intención de compra, percepción del sabor, percepción de la presentación y ventas realizadas.'
     },
-
     {
       title: '7. Ventaja injusta',
       text:
         'Combinación de ingredientes seleccionados, propuesta accesible, proceso de experimentación y presentación orientada al consumo práctico.'
     },
-
     {
       title: '8. Flujo de ingresos',
       text:
         'Venta individual a S/ 3.00 y promoción de 2 envases por S/ 5.00.'
     },
-
     {
       title: '9. Estructura de costos',
       text:
@@ -799,13 +585,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * ADQUISICIÓN
-   */
-
   acquisition: [
-
     {
       title: 'Afiches',
       description:
@@ -815,7 +595,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/logonutrivelt.jpeg'
       }
     },
-
     {
       title: 'Redes sociales',
       description:
@@ -825,7 +604,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/productofoto.jpeg'
       }
     },
-
     {
       title: 'Venta directa',
       description:
@@ -835,7 +613,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Foto del procuto final_.jpg'
       }
     },
-
     {
       title: 'Promociones',
       description:
@@ -847,13 +624,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * RETENCIÓN
-   */
-
   retention: [
-
     {
       client: 'Consumidores que probaron NUTRIVELT',
       action:
@@ -863,13 +634,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * GALERÍA GENERAL
-   */
-
   gallery: [
-
     {
       category: 'Problema',
       title: 'Situación problemática',
@@ -878,7 +643,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Imagen del problema.jpg'
       }
     },
-
     {
       category: 'Entrevistas',
       title: 'Proceso de empatía',
@@ -887,7 +651,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Foto de empatizar_.jpg'
       }
     },
-
     {
       category: 'Ideación',
       title: 'Generación de alternativas',
@@ -896,7 +659,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Primer prototipo_.jpg'
       }
     },
-
     {
       category: 'Prototipos',
       title: 'Evolución de prototipos',
@@ -905,7 +667,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Tercer prototipo - evolución_.jpg'
       }
     },
-
     {
       category: 'Producción',
       title: 'Preparación del producto',
@@ -914,7 +675,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Preparación.jpg'
       }
     },
-
     {
       category: 'Validación',
       title: 'Evaluación del producto',
@@ -923,7 +683,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/Después.jpg'
       }
     },
-
     {
       category: 'Ventas',
       title: 'Presentación del producto',
@@ -932,7 +691,6 @@ window.NUTRIVELT_CONFIG = {
         src: 'assets/images/productofoto.jpeg'
       }
     },
-
     {
       category: 'Equipo',
       title: 'Equipo Clúster Élan',
@@ -943,13 +701,7 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * EVIDENCIAS
-   */
-
   evidence: [
-
     {
       type: 'Fotografía',
       description:
@@ -960,7 +712,6 @@ window.NUTRIVELT_CONFIG = {
       },
       link: ''
     },
-
     {
       type: 'Documento',
       description:
@@ -971,7 +722,6 @@ window.NUTRIVELT_CONFIG = {
       },
       link: ''
     },
-
     {
       type: 'Encuesta',
       description:
@@ -982,7 +732,6 @@ window.NUTRIVELT_CONFIG = {
       },
       link: ''
     },
-
     {
       type: 'Factura',
       description:
@@ -993,7 +742,6 @@ window.NUTRIVELT_CONFIG = {
       },
       link: ''
     },
-
     {
       type: 'Registro',
       description:
@@ -1004,7 +752,6 @@ window.NUTRIVELT_CONFIG = {
       },
       link: ''
     },
-
     {
       type: 'Constancia',
       description:
@@ -1017,41 +764,26 @@ window.NUTRIVELT_CONFIG = {
     }
   ],
 
-
-  /*
-   * ANEXOS
-   */
-
   annexes: [
-
     {
       title: 'Facturas de compras',
       link: ''
     },
-
     {
       title: 'Registros de ventas',
       link: ''
     },
-
     {
       title: 'Constancias de participación',
       link: ''
     },
-
     {
       title: 'Documentos adicionales del proyecto',
       link: ''
     }
   ],
 
-
-  /*
-   * EQUIPO
-   */
-
   team: [
-
     {
       name: 'Jhonatan Bringas Vasquez',
       role: 'Integrante del equipo Clúster Élan',
